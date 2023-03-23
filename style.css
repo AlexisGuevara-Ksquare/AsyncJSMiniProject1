@@ -23,7 +23,7 @@ h1 {
     border-top: 1px solid #ccc;
 }
 
-.bttnContainer {
+.bttnContainer, .bttnContainerTwitter {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,12 +43,22 @@ h1 {
     border: none;
     border-radius: 15px;
     box-shadow: 0 9px #e2e2e2;
-  }
+}
   
-  .button:hover {background-color: #437fe7}
+.button:hover {background-color: #437fe7}
   
-  .button:active {
+.button:active {
     background-color: #3e6e8e;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
-  }
+}
+
+/* Twitter */
+.fa-twitter {
+    color: white;
+    font-size: 18px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+}
