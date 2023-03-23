@@ -29,4 +29,3 @@ Please include here a link to your [live demo](https://alexisguevara-ksquare.git
 
 # Requeriments
 You need to use the same version of node that we use in class and no external dependices can be used. This means no frameworks or libraries.
-
