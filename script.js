@@ -4,6 +4,15 @@ let adviceText = document.getElementById('adviceContent');
 let nextAdvice = document.getElementById('bttnNextOne');
 let tweetBttn = document.getElementById('bttnTweet');
 
+// Change background color random whe new advice is loaded
+const changeBackground = () => {
+    // Generate a random 6 character hex color value
+    const hexVal = Math.floor(Math.random() * 0xffffff).toString(16);
+
+    // Set the background color of the page to the generated color
+    document.body.style.background = `#${hexVal}`;
+};
+
 // Function to load advices
 let randomAdvice = () => {
     nextAdvice.innerHTML = 'Loading advice...';
@@ -13,7 +22,8 @@ let randomAdvice = () => {
     .then(result => {
         adviceText.innerHTML = '"' + result.slip.advice + '"';
         nextAdvice.innerHTML = 'Another One Please ';
-
+        // Execute function to change background color
+        changeBackground();
     });
 }
 
