@@ -3,7 +3,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 97vh;
+    min-height: 97.5vh;
     background: rgb(105, 166, 246);
     font-family: 'Montserrat', sans-serif;
 }
@@ -62,3 +62,4 @@ h1, p {
     text-decoration: none;
     border-radius: 25px;
 }
+
