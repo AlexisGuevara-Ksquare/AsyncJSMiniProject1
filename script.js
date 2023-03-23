@@ -1,6 +1,7 @@
 
 let adviceText = document.getElementById('adviceContent');
 let nextAdvice = document.getElementById('bttnNextOne');
+let tweetBttn = document.getElementById('bttnTweet');
 
 // Function to load advices
 let randomAdvice = () => {
@@ -16,4 +17,13 @@ let randomAdvice = () => {
     });
 }
 
+// Tweet button
+tweetBttn.addEventListener('click', () => {
+    // tweetURL get te url to post on twitter with the var to the random advice
+    let tweetURL = `https://twitter.com/intent/tweet?url=${adviceText.innerHTML}`;
+    // Open a new tab to post the advice
+    window.open(tweetURL, "_blank");
+});
+
+// On start execute fetch
 randomAdvice();
