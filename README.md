@@ -25,7 +25,7 @@ User Stories assignations
 
 # Live demo
 
-Please include here a link to your [live demo]()
+Please include here a link to your [live demo](https://alexisguevara-ksquare.github.io/AsyncJSMiniProject1/)
 
 # Requeriments
 You need to use the same version of node that we use in class and no external dependices can be used. This means no frameworks or libraries.
